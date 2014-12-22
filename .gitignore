@@ -1,3 +1,6 @@
 bin/
 vendor/
+
+# Drupal configuration
 docroot/*
+! docroot/sites/all/modules/cegeka
