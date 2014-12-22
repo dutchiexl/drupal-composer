@@ -8,7 +8,7 @@
       "type": "non-destructive-archive-installer",
       "version": "7.32.0",
       "dist": {
-        "url": "http://ftp.drupal.org/files/projects/drupal-7.32.zip",
+        "url": "http://ftp.drupal.org/files/projects/drupal-7.34.zip",
         "type": "zip"
       },
       "require": {
