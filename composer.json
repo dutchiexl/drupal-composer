@@ -82,6 +82,8 @@
     "drupal/drupal-extension": "~3.0",
     "vaidasm/teamcity-behat": "*.*"
   },
+  "require-dev": {
+  },
   "scripts": {
     "post-create-project-cmd": ["rm README.md LICENSE"]
   },
