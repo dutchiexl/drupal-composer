@@ -3,4 +3,13 @@ vendor/
 
 # Drupal configuration
 docroot/*
-! docroot/sites/all/modules/cegeka
+!docroot/sites
+
+docroot/sites
+!docroot/sites/all
+
+docroot/sites/all
+!docroot/sites/all/modules
+
+docroot/sites/all/modules
+!docroot/sites/all/modules/cegeka
