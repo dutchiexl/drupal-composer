@@ -27,9 +27,9 @@ default:
       drush:
         alias: 'local'
       drupal:
-        drupal_root: '/Library/WebServer/Documents/cegeka/cdh'
+        drupal_root: '%paths.base%/docroot'
       region_map:
         footer: "#footer"
       subcontexts:
         paths:
-          - "/Library/WebServer/Documents/cegeka/cdh/cegeka"
+          - "%paths.base%/cegeka"
