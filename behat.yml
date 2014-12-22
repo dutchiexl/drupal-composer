@@ -1,0 +1,35 @@
+default:
+  formatters:
+    teamcity: false
+    pretty: true
+  suites:
+    default:
+      contexts:
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\TeamCity\TeamCityFormatterExtension:
+        name: teamcity
+    Behat\MinkExtension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://cdh.local
+    Drupal\DrupalExtension:
+      text:
+         password_field: "edit-pass"
+         username_field: "edit-name"
+         log_in: "edit-submit"
+         log_out: "Logout"
+      api_driver: 'drupal'
+      blackbox: ~
+      drush:
+        alias: 'local'
+      drupal:
+        drupal_root: '/Library/WebServer/Documents/cegeka/cdh'
+      region_map:
+        footer: "#footer"
+      subcontexts:
+        paths:
+          - "/Library/WebServer/Documents/cegeka/cdh/cegeka"
