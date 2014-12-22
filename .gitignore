@@ -5,11 +5,11 @@ vendor/
 docroot/*
 !docroot/sites
 
-docroot/sites
+docroot/sites/*
 !docroot/sites/all
 
-docroot/sites/all
+docroot/sites/all/*
 !docroot/sites/all/modules
 
-docroot/sites/all/modules
+docroot/sites/all/modules/*
 !docroot/sites/all/modules/cegeka
