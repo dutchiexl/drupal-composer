@@ -10,6 +10,7 @@ docroot/sites/*
 
 docroot/sites/all/*
 !docroot/sites/all/modules
+!docroot/sites/all/themes
 
 docroot/sites/all/modules/*
 !docroot/sites/all/modules/cegeka
