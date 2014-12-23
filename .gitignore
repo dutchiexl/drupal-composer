@@ -11,6 +11,7 @@ docroot/sites/*
 docroot/sites/all/*
 !docroot/sites/all/modules
 !docroot/sites/all/themes
+docroot/sites/all/themes/contrib
 !docroot/sites/all/libraries
 
 docroot/sites/all/modules/*
