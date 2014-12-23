@@ -5,6 +5,7 @@ default:
   suites:
     default:
       contexts:
+        - FeatureContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\MessageContext
@@ -28,8 +29,3 @@ default:
         alias: 'local'
       drupal:
         drupal_root: '%paths.base%/docroot'
-      region_map:
-        footer: "#footer"
-      subcontexts:
-        paths:
-          - "%paths.base%/cegeka"
