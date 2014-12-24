@@ -1,30 +1,13 @@
 # features/main.feature
 Feature: main
-  In order to see the directory structure
-  As a UNIX user
-  I need to be able to list the current directory's contents
+  In order to confirm the website basics are configured right
+  As a visitor
+  I see some basic things and be able to access the website
+
+  Background:
+    Given I am an anonymous user
 
   @api
-  Scenario: Create users
-    Given users:
-      | name     | mail            | status |
-      | Joe User | joe@example.com | 1      |
-    And I am logged in as a user with the "administrator" role
-    When I visit "admin/people"
-    Then I should see the link "Joe User"
-
-  @api
-  Scenario: Test user login
-    Given users:
-      | name     | mail            | status |
-      | Joe User | joe@example.com | 1      |
-    And I am logged in as "Joe User"
-    When I visit "user"
-    Then I should see "Joe User"
-
-  @api
-  Scenario: Conditional display of textfield
-    Given I am logged in as a user with the "administrator" role
-    And I am on "/node/add/page"
-    And I select the radio button "Show foo"
-    Then I should not see a "Bar" textfield form element
+  Scenario: Check the homepage
+    When I am on the homepage
+    Then I should get a "200" HTTP response
