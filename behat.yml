@@ -2,6 +2,7 @@ default:
   formatters:
     teamcity: false
     pretty: true
+    html: true
   suites:
     default:
       contexts:
@@ -13,6 +14,8 @@ default:
   extensions:
     Behat\TeamCity\TeamCityFormatterExtension:
         name: teamcity
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+            name: html
     Behat\MinkExtension:
       goutte: ~
       selenium2: ~
